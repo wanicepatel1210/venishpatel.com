@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2;
+    font-family: 'Comforta', serif;
+    color: #90a4ae;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0A192F;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+.top-header {
+    display: flex;
+    padding: 2vh 10vh;
+}
+
+.logo-image{
+    width: 6vw;
+    padding: 0.5vw;
+}
+
+.animated-item {
+    animation: topToBottom 6s linear infinite 0s;
+    font-variant: small-caps;
+    color: #6fffe9;
+    font-size: 1.2vw;
+    letter-spacing: 0.5vw;
+}
+
+@keyframes topToBottom {
+
+    
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+        transform: translateY(-2vh);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateY(2vh);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.neomorphism {
+    box-shadow: 
+        0.4vw 0.4vw 0.5vw #020d22, 
+        -0.4vw -0.4vw 0.5vw #151e35;
+}
+
+.reverse-neomorphism {
+    box-shadow: 
+        inset 0.4vw 0.4vw 0.5vw #020d22, 
+        inset -0.4vw -0.4vw 0.5vw #151e35;
+}
+
+.tile {
+    width: 60%;
+    padding: 3vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 2vh;
+}
+
+.tile-header {
+    width: 50%;
+    padding: 1vh;
+    margin: auto;
+    margin-bottom: 3vh;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 1.5vh;
+    color: #64ffda;
+}
+
+.tile-content {
+    /*background: linear-gradient(145deg,#0b132b, #050e2b);*/
+    padding: 2vh;
+    font-size: 0.9vw;
+    border-radius: 1.5vh;
+}
+
+footer {
+    text-align: center;
+    color: #3a506b;
+    width: 70vw;
+    padding: 1vh;
+    margin: 3vh auto;
+    font-size: 0.9vw;
+}
+
+footer > a:hover {
+    color: #5bc0be;
+}
