@@ -8,29 +8,39 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="body">
     <header class="top-header">
-        <div class="logo neomorphism">
+        <div class="logo">
             <img class="logo-image" src="images/logo.png" alt="">
         </div>
-        <nav>
-
+        <nav class="navigation">
+            <ol class="nav-list neomorphism">
+                <li class="nav-list-item"><a href="">About</a></li>
+                <li class="nav-list-item"><a href="">resume</a></li>
+                <li class="nav-list-item"><a href="">Projects</a></li >
+                <li class="nav-list-item"><a href="">Contact</a></li>
+            </ol>
         </nav>
+        <div class="color-mode">
+            <div class="color-mode-toggle reverse-neomorphism">
+                <div class="color-mode-switch" onclick="toggleButton()" style="left: 0vw;"></div>
+            </div>
+        </div>
     </header>
     <main>
-        <section style="margin-top: 5vh; width: 80vw;">
+        <section style="padding: 10vh; width: 80vw;">
             <header class="">
-                <div style="display: inline-block;">Hi, I am <span style="font-variant: small-caps; font-size: 2vw; font-weight: bold; letter-spacing: 0.5vw;">&nbsp;Venish Patel, </span> a&nbsp;</div>
-                <section class="reverse-neomorphism" style="color: #6fffe9; padding: 1vh; text-align: center; border-radius: 1vh; display: inline-block; width: 15vw;">
+                <div style="display: inline-block;">Hi, I am <span class="name-venish">&nbsp;Venish Patel, </span> a&nbsp;</div>
+                <section class="personality reverse-neomorphism">
                     <span class="animated-item">Programmer</span>
                     <span class="animated-item" style="display: none;">Designer</span>
                     <span class="animated-item" style="display: none;">Trekker</span>
                     <span class="animated-item" style="display: none;">E-scooterist</span>
                 </section>
             </header>
-            <section style="margin-top: 5vh; text-align: justify; width: 24vw;">
+            <section class="summary">
                 <p>
-                    I am a Master of Computer Science student at California State University - East Bay. &nbsp;
+                    I am a Master of Computer Science student at California State University - East Bay.
                     I am proficient in bulding well-designed, high quality web applications.
                 </p>
             </section>
