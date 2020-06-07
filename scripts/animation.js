@@ -1,5 +1,3 @@
-alert("This site is under developement");
-
 let i = 0;
 setInterval(function itemAnimation() {
     document.getElementsByClassName("animated-item")[i].style.display = "none";
